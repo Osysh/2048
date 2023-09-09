@@ -1,0 +1,35 @@
+body {
+  font-weight: bold;
+  font-size: 55px;
+  color: #776e65;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Board-container {
+  background-color: #776e65;
+  padding: 12px;
+  width: fit-content;
+  border-radius: 6px;
+}
+
+.Board {
+  background-color: #776e65;
+  width: 470px;
+  height: 470px;
+
+  display: grid;
+  grid-template-columns: repeat(4, calc(95% / 4));
+  grid-auto-rows: 1fr;
+  grid-gap: 8px;
+}
+
+.Cell {
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
